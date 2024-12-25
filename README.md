@@ -64,232 +64,129 @@
 
 </details>
 
+---
 
-#### 📊 Program 3: Plotting with Matplotlib
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 3: String Analysis and Similarity**
+### **Working**
+1. **Part A**: 
+   - Accepts a sentence as input.
+   - Counts the number of words using `split()`.
+   - Counts digits, uppercase, and lowercase letters using loops and conditional checks.
 
-- Creates static visualizations using Matplotlib.
-- Examples include bar charts, pie charts, line plots, and scatter plots.
-- Allows customization of titles, axes, labels, and legends.
+2. **Part B**:
+   - Compares two strings to calculate similarity.
+   - Calculates the ratio of matching characters to the length of the longer string.
 
-</details>
+### **Viva Q&A**
+**Q1: How do you count the number of words in a sentence?**  
+> Use the `split()` method to separate words and `len()` to count them.
 
-<details>
-<summary><b>Viva Questions</b></summary>
+**Q2: How is string similarity calculated?**  
+> `(Number of matching characters) / (Length of the longer string)` gives the similarity percentage.
 
-**Q1: What is Matplotlib?**  
-> A Python library for creating static, animated, and interactive visualizations.
-
-**Q2: How do you plot a bar chart?**  
-> Use `plt.bar(x, y)` where `x` is the category and `y` is the value.
-
-**Q3: Explain the use of `plt.show()`.**  
-> It displays the plotted figure on the screen.
-
-**Q4: How do you save a plot as an image?**  
-> Use `plt.savefig('filename.png')`.
-
-</details>
+**Q3: How do you identify uppercase and lowercase letters?**  
+> Use conditions `'A' <= ch <= 'Z'` for uppercase and `'a' <= ch <= 'z'` for lowercase.
 
 ---
 
-#### 🎨 Program 4: Advanced Seaborn Visualizations
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 4: Matplotlib Visualizations**
+### **Working**
+1. **Part A**: Demonstrates bar plots using `plt.bar()`.
+2. **Part B**: Demonstrates scatter plots using `plt.scatter()`.
 
-- Enhances Matplotlib with high-level plotting functions.
-- Includes categorical plots (e.g., box plots, violin plots) and relational plots (e.g., scatter plots, line plots).
-- Offers built-in themes for better aesthetics.
+### **Viva Q&A**
+**Q1: What is the purpose of `plt.bar()`?**  
+> It creates bar plots to compare categorical data.
 
-</details>
+**Q2: How do scatter plots differ from line plots?**  
+> Scatter plots show individual data points, while line plots connect them.
 
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: What makes Seaborn different from Matplotlib?**  
-> Seaborn simplifies statistical plotting and provides better aesthetics out-of-the-box.
-
-**Q2: How do you create a heatmap?**  
-> Use `sns.heatmap(data, annot=True)` where `data` is a 2D dataset.
-
-**Q3: What is the purpose of `sns.set_theme()`?**  
-> It customizes the overall style of plots.
-
-**Q4: How do you display relationships in a dataset?**  
-> Use `sns.pairplot(data)` to show pairwise relationships.
-
-</details>
+**Q3: How do you customize the plots?**  
+> Use attributes like `color`, `title`, and `xlabel()`.
 
 ---
 
-#### 📈 Program 5: Bokeh Interactive Charts
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 5: Histograms and Pie Charts**
+### **Working**
+1. **Part A**: Generates histograms using `plt.hist()`.
+2. **Part B**: Creates pie charts with labels and percentages using `plt.pie()`.
 
-- Creates interactive visualizations with zoom, pan, and tooltips.
-- Generates web-ready visualizations with minimal code.
-- Supports features like linked brushing and hover tools.
+### **Viva Q&A**
+**Q1: What is the purpose of a histogram?**  
+> It visualizes data distribution across bins.
 
-</details>
-
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: What is Bokeh?**  
-> A library for creating interactive, browser-based visualizations.
-
-**Q2: How do you create a simple line chart in Bokeh?**  
-> Use `figure()` to create a canvas, then `line(x, y)` to add the chart.
-
-**Q3: What are tooltips in Bokeh?**  
-> Tooltips display additional information when hovering over chart elements.
-
-**Q4: How do you embed a Bokeh chart in an HTML file?**  
-> Use `output_file('filename.html')` and `save()`.
-
-</details>
+**Q2: How do you highlight a slice in a pie chart?**  
+> Use the `explode` parameter to separate a slice.
 
 ---
 
-#### 📊 Program 6: Plotly for Dynamic Visualizations
-<details>
-<summary><b>Working</b></summary>
+## **📈 Program 6: Linear Plotting**
+### **Working**
+1. **Part A**: Demonstrates linear plotting using `plt.plot()`.
+2. **Part B**: Shows line formatting using markers, colors, and styles.
 
-- Creates dynamic, web-ready visualizations.
-- Examples include 3D plots, bubble charts, and choropleth maps.
-- Integrates seamlessly with Dash for dashboards.
+### **Viva Q&A**
+**Q1: What is the default line style in `plt.plot()`?**  
+> A solid line.
 
-</details>
-
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: What is Plotly?**  
-> A library for creating interactive, high-quality visualizations.
-
-**Q2: How do you create a scatter plot?**  
-> Use `plotly.express.scatter(data, x='column1', y='column2')`.
-
-**Q3: What file formats can Plotly export?**  
-> HTML, PNG, and PDF, among others.
-
-**Q4: How does Plotly differ from Bokeh?**  
-> Plotly focuses on ease of use and rich visuals, while Bokeh emphasizes custom interactivity.
-
-</details>
+**Q2: How do you add markers to a line plot?**  
+> Use the `marker` parameter, e.g., `'o'` for circles.
 
 ---
 
-#### 🧮 Program 7: NumPy Operations for Numerical Analysis
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 7: Customizing Seaborn Plots**
+### **Working**
+- Utilizes Seaborn's aesthetics and `sns.countplot()` for count-based visualizations.
+- Allows customization using attributes like `palette`, `style`, and `order`.
 
-- Performs numerical computations efficiently.
-- Handles multidimensional arrays, mathematical functions, and linear algebra operations.
+### **Viva Q&A**
+**Q1: How does Seaborn differ from Matplotlib?**  
+> Seaborn simplifies statistical visualization and offers built-in themes.
 
-</details>
-
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: What is NumPy?**  
-> A Python library for numerical computing with support for arrays and matrices.
-
-**Q2: How do you create an array?**  
-> Use `numpy.array([1, 2, 3])`.
-
-**Q3: What is broadcasting in NumPy?**  
-> It enables element-wise operations on arrays of different shapes.
-
-**Q4: How do you find the mean of an array?**  
-> Use `numpy.mean(array)`.
-
-</details>
+**Q2: What is the purpose of `sns.set_theme()`?**  
+> It sets the overall style for plots.
 
 ---
 
-#### 📊 Program 8: Pandas Basics for Data Manipulation
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 8: Bokeh Visualizations**
+### **Working**
+1. **Part A**: Demonstrates line graphs with annotations and legends using `bokeh.plotting`.
+2. **Part B**: Creates various plots (line, scatter, bar) and arranges them using layouts.
 
-- Processes structured data using DataFrames and Series.
-- Offers tools for data cleaning, aggregation, and analysis.
+### **Viva Q&A**
+**Q1: How is Bokeh different from Matplotlib?**  
+> Bokeh creates interactive, browser-based visualizations, while Matplotlib focuses on static plots.
 
-</details>
-
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: What is a DataFrame?**  
-> A 2D labeled data structure in Pandas.
-
-**Q2: How do you read a CSV file?**  
-> Use `pandas.read_csv('filename.csv')`.
-
-**Q3: What is the difference between `loc` and `iloc`?**  
-> `loc` uses labels, while `iloc` uses integer-based indexing.
-
-**Q4: How do you handle missing data?**  
-> Use `fillna()` to replace missing values or `dropna()` to remove them.
-
-</details>
+**Q2: How do you add annotations in Bokeh?**  
+> Use the `Label` class and `add_layout()` method.
 
 ---
 
-#### 🔥 Program 9: Advanced Data Visualization with Heatmaps and Pair Plots
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 9: 3D Plotting with Plotly**
+### **Working**
+- Visualizes multidimensional data in 3D using `plotly.express.scatter_3d()`.
 
-- Visualizes data correlations using heatmaps.
-- Displays pairwise relationships in data using pair plots.
+### **Viva Q&A**
+**Q1: What is the purpose of 3D plots?**  
+> They visualize relationships between three variables simultaneously.
 
-</details>
-
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: How do you generate a heatmap?**  
-> Use `sns.heatmap(data, annot=True, cmap='coolwarm')`.
-
-**Q2: What are pair plots used for?**  
-> They show relationships between multiple variables in a dataset.
-
-**Q3: What is the significance of the `cmap` parameter?**  
-> It specifies the color palette for the visualization.
-
-**Q4: How do you adjust plot size?**  
-> Use the `figsize` parameter in Matplotlib.
-
-</details>
+**Q2: How do you add color to distinguish categories in Plotly?**  
+> Use the `color` parameter in `scatter_3d()`.
 
 ---
 
-#### 📊 Program 10: Dash for Building Interactive Dashboards
-<details>
-<summary><b>Working</b></summary>
+## **📊 Program 10: Time Series and Maps with Plotly**
+### **Working**
+1. **Part A**: Time series visualization using `plotly.express.line()`.
+2. **Part B**: Creates interactive choropleth maps using `plotly.express.choropleth()`.
 
-- Dash integrates Python with web applications to create interactive dashboards.
-- Displays real-time data with components like sliders, dropdowns, and graphs.
+### **Viva Q&A**
+**Q1: How do you prepare data for time series visualization?**  
+> Ensure the date column is in a datetime format.
 
-</details>
+**Q2: What is a choropleth map?**  
+> It visualizes geographical data using color intensities.
 
-<details>
-<summary><b>Viva Questions</b></summary>
-
-**Q1: What is Dash?**  
-> A Python framework for building interactive web dashboards.
-
-**Q2: How do you start a Dash application?**  
-> Use `Dash(__name__)` to initialize the app and `run_server()` to run it.
-
-**Q3: How are callbacks used in Dash?**  
-> Callbacks dynamically update dashboard components based on user interaction.
-
-**Q4: What is the role of the `dcc.Graph` component?**  
-> It displays interactive graphs in a Dash application.
-
-</details>
 
 
 ## 🛠️ Technologies Used
